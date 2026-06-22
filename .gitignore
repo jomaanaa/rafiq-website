@@ -1,0 +1,19 @@
+# ── Secrets — never commit these ──────────────────────────
+pgdb/chatbot_secret.php
+.env
+*.env
+
+# ── PHP / server ──────────────────────────────────────────
+*.log
+*.cache
+
+# ── OS junk ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,18 @@
+[phases.setup]
+nixPkgs = [
+    "php83",
+    "php83Extensions.pdo",
+    "php83Extensions.pgsql",
+    "php83Extensions.pdo_pgsql",
+    "php83Extensions.mbstring",
+    "php83Extensions.openssl",
+    "php83Extensions.curl",
+    "php83Extensions.gd"
+]
+
+# Skip "composer install" — this project has no PHP package dependencies
+[phases.install]
+cmds = []
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT"
